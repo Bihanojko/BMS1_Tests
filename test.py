@@ -29,4 +29,5 @@ txt_outputs = sorted([x for x in outputs if x[-3:] == 'txt'])
 # compare txt files
 print('\n\nComparing output files...')
 for example in txt_outputs:
-    os.system('diff -s ref.txt Examples/' + example)
+    print(example)
+    os.system('diff ref.txt Examples/' + example)
